@@ -1,0 +1,16 @@
+LICENCE
+MANIFEST.in
+setup.py
+app/__init__.py
+app/api.py
+app/xerial.py
+app/docs/.DS_Store
+app/docs/README.md
+app/logs/03:17:2016-02:50:55.txt
+app/presets/bp.xer
+bin/xerial
+xerial.egg-info/PKG-INFO
+xerial.egg-info/SOURCES.txt
+xerial.egg-info/dependency_links.txt
+xerial.egg-info/requires.txt
+xerial.egg-info/top_level.txt

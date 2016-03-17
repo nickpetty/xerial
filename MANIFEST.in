@@ -1,0 +1,8 @@
+include LICENCE 
+include MANIFEST.in
+include app/docs/README.md
+recursive-include app/docs *.md
+recursive-include app/logs *
+recursive-include app/presets *
+
+
