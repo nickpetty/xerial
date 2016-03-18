@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='xerial',
-    version='1.0.8b1',
+    version='1.0.9b1',
     author='Nicholas Petty',
     author_email='nick@ihackeverything.com',
     packages=['xerial'],
