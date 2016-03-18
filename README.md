@@ -14,7 +14,7 @@ Install:
 Usage:
 ------------------------------------------------------------------------
     >xerial
-    
+
     -p <port>              # Connect to serial port.
     -a <b/p/s>             # -a bytesize/parity/stopbits (default 8/N/1).
                            # Parity options 'N','E','O','M','S'.
@@ -35,4 +35,5 @@ Usage:
 
 Notes:
 ------------------------------------------------------------------------
- + Type `>q` at anytime to exit serial terminal
+ + Type `>q` at anytime to exit serial terminal.
+ + Please submit all pull requests to the `development` branch.
