@@ -6,12 +6,12 @@ setup(
     author='Nicholas Petty',
     author_email='nick@ihackeverything.com',
     packages=['app'],
-    package_data={'':['docs/*.md','LICENCE']},
+    package_data={'':['docs/*.md','LICENSE']},
     include_package_data=True,
     url='http://github.com/nickpetty/xerial',
-    license='GPL licence, see LICENCE',
+    license='GPL licence, see LICENSE',
     description='Terminal Based Serial Client',
-    long_description=open('README.md').read(),
+    long_description=open('README.rst').read(),
     install_requires=['pyserial'],
     scripts=['bin/xerial']
 )
