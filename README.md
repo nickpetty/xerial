@@ -1,13 +1,13 @@
 
 xerial - Terminal Based Serial Client
 -------------------------------------
- + URL: http://github.com/nickpetty/xserial
+ + ![Travis-CI](https://travis-ci.org/nickpetty/xerial.svg?branch=master)
 
 xerial Copyright (C) 2016  Nicholas Petty
 -----------------------------------------
-  This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
-  This is free software, and you are welcome to redistribute it
-  under certain conditions; type `xerial -license' for details.
+    This program comes with ABSOLUTELY NO WARRANTY.
+    This is free software, and you are welcome to redistribute it
+    under certain conditions; type `xerial -license' for details.
 
 Usage:
 ------------------------------------------------------------------------
