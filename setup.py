@@ -11,7 +11,7 @@ setup(
     url='http://github.com/nickpetty/xerial',
     license='GPL licence, see LICENCE',
     description='Terminal Based Serial Client',
-    long_description=open('README').read(),
+    long_description=open('README.md').read(),
     install_requires=['pyserial'],
     scripts=['bin/xerial']
 )
