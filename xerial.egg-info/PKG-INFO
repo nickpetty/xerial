@@ -1,13 +1,13 @@
 Metadata-Version: 1.0
 Name: xerial
-Version: 1.0.5b1
+Version: 1.0.6b1
 Summary: Terminal Based Serial Client
 Home-page: http://github.com/nickpetty/xerial
 Author: Nicholas Petty
 Author-email: nick@ihackeverything.com
 License: GPL licence, see LICENSE
 Description: 
-        xerial - Terminal Based Serial Client ![Travis-CI](https://travis-ci.org/nickpetty/xerial.svg?branch=master)
+        xerial - Terminal Based Serial Client 
         ------------------------------------------------------------------------
         
             xerial Copyright (C) 2016  Nicholas Petty
@@ -45,4 +45,5 @@ Description:
         ------------------------------------------------------------------------
          + Type `>q` at anytime to exit serial terminal.
          + Please submit all pull requests to the `development` branch.
+Keywords: xerial serial
 Platform: UNKNOWN
