@@ -13,7 +13,7 @@ setup(
     description='Terminal Based Serial Client',
     long_description=open('README.rst').read(),
     install_requires=['pyserial'],
-    scripts=['bin/xerial']
+    scripts=['bin/xerial'],
     keywords="xerial serial"
 )
 
