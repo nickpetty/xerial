@@ -1,6 +1,6 @@
 LICENSE
 MANIFEST.in
-README.md
+README.rst
 setup.py
 app/__init__.py
 app/cli.py

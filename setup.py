@@ -2,10 +2,10 @@ from setuptools import setup
 
 setup(
     name='xerial',
-    version='1.0.2b1',
+    version='1.0.3b1',
     author='Nicholas Petty',
     author_email='nick@ihackeverything.com',
-    packages=['app'],
+    packages=['xerial'],
     package_data={'':['docs/*.md','LICENSE']},
     include_package_data=True,
     url='http://github.com/nickpetty/xerial',

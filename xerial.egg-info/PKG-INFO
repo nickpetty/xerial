@@ -1,11 +1,11 @@
 Metadata-Version: 1.0
 Name: xerial
-Version: 1.0.2b1
+Version: 1.0.3b1
 Summary: Terminal Based Serial Client
 Home-page: http://github.com/nickpetty/xerial
 Author: Nicholas Petty
 Author-email: nick@ihackeverything.com
-License: GPL licence, see LICENCE
+License: GPL licence, see LICENSE
 Description: 
         xerial - Terminal Based Serial Client ![Travis-CI](https://travis-ci.org/nickpetty/xerial.svg?branch=master)
         ------------------------------------------------------------------------

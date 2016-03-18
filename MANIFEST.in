@@ -1,11 +1,11 @@
 include LICENSE 
 include MANIFEST.in
 include README.rst
-include app/docs/README.md
-include app/docs/LICENSE.md
-recursive-include app/docs *.md
-recursive-include app/logs 
-recursive-include app/presets 
-recursive-include app/xerial *
+include xerial/docs/README.md
+include xerial/docs/LICENSE.md
+recursive-include xerial/docs *.md
+recursive-include xerial/logs 
+recursive-include xerial/presets 
+recursive-include xerial/xerial *
 
 
