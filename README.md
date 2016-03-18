@@ -1,16 +1,20 @@
 
-xerial - Terminal Based Serial Client
--------------------------------------
- + ![Travis-CI](https://travis-ci.org/nickpetty/xerial.svg?branch=master)
+xerial - Terminal Based Serial Client ![Travis-CI](https://travis-ci.org/nickpetty/xerial.svg?branch=master)
+------------------------------------------------------------------------
 
-xerial Copyright (C) 2016  Nicholas Petty
------------------------------------------
+    xerial Copyright (C) 2016  Nicholas Petty
     This program comes with ABSOLUTELY NO WARRANTY.
     This is free software, and you are welcome to redistribute it
     under certain conditions; type `xerial -license' for details.
 
+Install:
+------------------------------------------------------------------------
+    pip install xerial
+
 Usage:
 ------------------------------------------------------------------------
+    >xerial
+    
     -p <port>              # Connect to serial port.
     -a <b/p/s>             # -a bytesize/parity/stopbits (default 8/N/1).
                            # Parity options 'N','E','O','M','S'.
@@ -31,4 +35,4 @@ Usage:
 
 Notes:
 ------------------------------------------------------------------------
- + Type '>q' at anytime to exit serial terminal
+ + Type `>q` at anytime to exit serial terminal
