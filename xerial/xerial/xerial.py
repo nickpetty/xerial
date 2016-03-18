@@ -49,7 +49,8 @@ class Xerial():
 		while inputBuffer != '>q':
 			
 			inputBuffer = raw_input()
-			self.logFile.write(inputBuffer+'\n')
+			if self.log == True:
+				self.logFile.write(inputBuffer+'\n')
 
 			if inputBuffer == '>q':
 				self.ser.close()
