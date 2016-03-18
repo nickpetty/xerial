@@ -25,7 +25,7 @@ def showHelp():
 	for each in glob.glob('/dev/tty.*'):
 		print "  > " + str(each)
 
-if __name__ == "app.xerial" or "__main__":
+if __name__ == "xerial.xerial" or "__main__":
 	if len(sys.argv) == 1:
 		showHelp()
 		exit()
