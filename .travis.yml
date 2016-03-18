@@ -4,5 +4,5 @@ python:
 
 install:
   - cd xerial 
-  - pip setup.py install
+  - python setup.py install
 script: xerial
