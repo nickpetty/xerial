@@ -37,3 +37,8 @@
 ------------------------------------------------------------------------
  + Type `>q` at anytime to exit serial terminal.
  + Please submit all pull requests to the `development` branch.
+ Platforms:
+-------------------------------------------------------------------------
++ OSX
++ Linux
++ (Windows coming soon)
