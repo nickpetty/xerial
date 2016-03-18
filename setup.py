@@ -14,6 +14,7 @@ setup(
     long_description=open('README.rst').read(),
     install_requires=['pyserial'],
     scripts=['bin/xerial']
+    keywords="xerial serial"
 )
 
 
