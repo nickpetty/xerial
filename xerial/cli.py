@@ -176,7 +176,7 @@ if __name__ == "xerial.xerial" or "__main__":
 		
 
 	else:
-		print '  No port specified.  Usage: "xerial -c <serialport>". Run "xerial" for more options.'
+		print '  No port specified.  Usage: "xerial -p <serialport>". Run "xerial" for more options.'
 		exit()
 
 	if '-license' == sys.argv[1]:
