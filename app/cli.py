@@ -5,7 +5,7 @@ pkg_resources.require("pyserial==3.0.1")
 import glob
 import json
 import os
-from api import Xerial
+from xerial import Xerial
 path = os.path.dirname(os.path.realpath(__file__))
 
 def flags(flag):
@@ -72,9 +72,9 @@ if __name__ == "app.xerial" or "__main__":
 		print 'No presets found.'
 		exit()
 
-	if flags("-c") != False:
+	if flags("-p") != False:
 		#port = sys.argv[sys.argv.index('-c')+1]
-		port = flags("-c")
+		port = flags("-p")
 
 		if '-b' in sys.argv:
 			speed = sys.argv[sys.argv.index('-b')+1]
@@ -179,6 +179,12 @@ if __name__ == "app.xerial" or "__main__":
 		print '  No port specified.  Usage: "xerial -c <serialport>". Run "xerial" for more options.'
 		exit()
 
+	if '-license' == sys.argv[1]:
+		print
+		print open(path+"/docs/LICENSE.md").read()
+		print
+		exit()
+
 	if sys.argv[1] == '-l':
 		try:
 			if not os.path.isdir(path+"/presets"):
@@ -197,15 +203,15 @@ if __name__ == "app.xerial" or "__main__":
 		xerial.terminal()
 		exit()
 
-	if '-c' in sys.argv:
-		print 'Connecting to ' + sys.argv[sys.argv.index('-c')+1] + ' at speed ' + str(speed) + ' - ' + str(bytesize)+'/'+str(parity)+'/'+str(stopbits) 
+	if '-p' in sys.argv:
+		print 'Connecting to ' + sys.argv[sys.argv.index('-p')+1] + ' at speed ' + str(speed) + ' - ' + str(bytesize)+'/'+str(parity)+'/'+str(stopbits) 
 
 		xerial = Xerial(port, speed, bytesize, parity, stopbits, timeout, rtscts=handshake, carriage=carriage, newline=newline, log=log)
 		xerial.connect()
 		xerial.terminal()
 		exit()
 	else:
-		print "  -c <port> must be included"
+		print "  -p <port> must be included"
 		exit()
 
 

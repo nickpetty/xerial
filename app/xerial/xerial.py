@@ -20,6 +20,10 @@ class Xerial():
 			self.log = True
 		else:
 			self.log = False
+		if self.log == True:
+			logName = str(self.ser.port.split('/')[len(self.ser.port.split('/'))-1])+'='+str(time.strftime("%m:%d:%Y")) +'-'+ str(time.strftime("%I:%M:%S"))
+			self.logFile = open(logName+".txt", 'w')
+
 
 	def connect(self):
 		try:
@@ -45,6 +49,7 @@ class Xerial():
 		while inputBuffer != '>q':
 			
 			inputBuffer = raw_input()
+			self.logFile.write(inputBuffer+'\n')
 
 			if inputBuffer == '>q':
 				self.ser.close()
@@ -63,13 +68,6 @@ class Xerial():
 			self.ser.write('\n')
 
 	def listen(self):
-		packet = []
-		if self.log == True:
-			logName = str(time.strftime("%m:%d:%Y")) +'-'+ str(time.strftime("%I:%M:%S"))
-			if not os.path.isdir(os.path.dirname(os.path.realpath(__file__))+"/logs"):
-				os.makedirs(os.path.dirname(os.path.realpath(__file__))+"/logs")
-			logFile = open(os.path.dirname(os.path.realpath(__file__))+"/logs/"+logName+".txt", 'w')
-
 		while True:
 			try:
 				line = self.ser.readline().strip('\n')
