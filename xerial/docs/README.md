@@ -1,6 +1,6 @@
 
 xerial - Terminal Based Serial Console
--------------------------------------
+--------------------------------------
  + URL: http://github.com/nickpetty/xserial
 
     xerial Copyright (C) 2016  Nicholas Petty, GPL V3
