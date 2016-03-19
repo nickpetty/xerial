@@ -41,7 +41,7 @@ def flags(flag):
 
 def showHelp():
 	print open(path+'/docs/README.md','r').read()
-	print '  Logs can be found in ' + path + "/logs/"		
+	print ' + Logs can be found in ' + path + "/logs/"		
 	print
 	print 'Available Ports:'
 	print '----------------'		
