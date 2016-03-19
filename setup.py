@@ -2,12 +2,12 @@ from setuptools import setup
 
 setup(
     name='xerial',
-    version='1.1.0b1',
+    version='1.1.3b1',
     author='Nicholas Petty',
     author_email='nick@ihackeverything.com',
     packages=['xerial'],
     entry_points = {
-        "console_scripts": ['xerial = xerial.xerial']
+        "console_scripts": ['xerial = xerial.cli:cli']
         },
     package_data={'':['docs/*.md','LICENSE']},
     include_package_data=True,

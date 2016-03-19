@@ -1,9 +1,9 @@
 
-xerial - Terminal Based Serial Client
--------------------------------------
+xerial - Terminal Based Serial Console
+--------------------------------------
  + URL: http://github.com/nickpetty/xserial
 
-    xerial Copyright (C) 2016  Nicholas Petty
+    xerial Copyright (C) 2016  Nicholas Petty, GPL V3
     This program comes with ABSOLUTELY NO WARRANTY.
     This is free software, and you are welcome to redistribute it
     under certain conditions; type `xerial -license' for details.

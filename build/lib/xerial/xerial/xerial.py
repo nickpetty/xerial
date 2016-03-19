@@ -78,4 +78,3 @@ class Xerial():
 
 			except:
 				return
-

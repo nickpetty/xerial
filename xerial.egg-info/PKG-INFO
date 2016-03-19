@@ -1,28 +1,41 @@
 Metadata-Version: 1.0
 Name: xerial
-Version: 1.1.0b1
+Version: 1.1.3b1
 Summary: Terminal Based Serial Client
 Home-page: http://github.com/nickpetty/xerial
 Author: Nicholas Petty
 Author-email: nick@ihackeverything.com
 License: GPL licence, see LICENSE
-Description: 
-        xerial - Terminal Based Serial Client 
-        ------------------------------------------------------------------------
+Description: xerial - Terminal Based Serial Console
+        ======================================
         
-            xerial Copyright (C) 2016  Nicholas Petty
+        - Github: github.com/nickpetty/xerial
+        - Travis-CI: travis-ci.org/nickpetty/xerial.svg?branch=master
+        
+        ::
+        
+            xerial Copyright (C) 2016  Nicholas Petty, GPL V3
             This program comes with ABSOLUTELY NO WARRANTY.
             This is free software, and you are welcome to redistribute it
             under certain conditions; type `xerial -license' for details.
         
         Install:
-        ------------------------------------------------------------------------
+        ========
+        
+        ::
+        
             pip install xerial
         
         Usage:
-        ------------------------------------------------------------------------
-            >xerial
+        ======
         
+        ::
+        
+            # Minimal Usage:
+            > xerial -p COM1  # default parameters are 9600 8/N/1
+        
+        
+            # Arguments:
             -p <port>              # Connect to serial port.
             -a <b/p/s>             # -a bytesize/parity/stopbits (default 8/N/1).
                                    # Parity options 'N','E','O','M','S'.
@@ -42,14 +55,17 @@ Description:
             -license               # Display License
         
         Notes:
-        ------------------------------------------------------------------------
-         + Type `>q` at anytime to exit serial terminal.
-         + Please submit all pull requests to the `development` branch.
+        =========
+        
+        -  Type ``>q`` at anytime to exit serial terminal.
+        -  Please submit all pull requests to the ``development`` branch.
         
         Platforms:
-        -------------------------------------------------------------------------
-        + OSX
-        + Linux
-        + Windows
+        ==========
+        
+        -  OSX
+        -  Linux
+        -  Windows
+        
 Keywords: xerial serial
 Platform: UNKNOWN

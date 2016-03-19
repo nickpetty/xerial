@@ -1,8 +1,8 @@
 
-# xerial - Terminal Based Serial Client [![Travis-CI](https://travis-ci.org/nickpetty/xerial.svg?branch=master)](https://travis-ci.org/nickpetty/xerial)
+# xerial - Terminal Based Serial Console [![Travis-CI](https://travis-ci.org/nickpetty/xerial.svg?branch=master)](https://travis-ci.org/nickpetty/xerial)
 ------------------------------------------------------------------------
 
-    xerial Copyright (C) 2016  Nicholas Petty
+    xerial Copyright (C) 2016  Nicholas Petty, GPL V3
     This program comes with ABSOLUTELY NO WARRANTY.
     This is free software, and you are welcome to redistribute it
     under certain conditions; type `xerial -license' for details.
@@ -36,13 +36,15 @@
     -log                   # Log all terminal activity to file in current working directory.
     -license               # Display License
 
+
 ## Notes:
 ------------------------------------------------------------------------
  + Type `>q` at anytime to exit serial terminal.
  + Please submit all pull requests to the `development` branch.
+
  
- Platforms:
+## Platforms:
 -------------------------------------------------------------------------
-+ OSX
-+ Linux
-+ Windows
+ + OSX
+ + Linux
+ + Windows
