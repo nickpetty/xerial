@@ -6,7 +6,31 @@ import glob
 import json
 import os
 from xerial import Xerial
+import platform
+import serial
+
 path = os.path.dirname(os.path.realpath(__file__))
+
+def serialPorts():
+	if sys.platform.startswith('win'):
+		ports = ['COM%s' % (i + 1) for i in range(256)]
+	elif sys.platform.startswith('linux') or sys.platform.startswith('cygwin'):
+
+		ports = glob.glob('/dev/tty[A-Za-z]*')
+	elif sys.platform.startswith('darwin'):
+		ports = glob.glob('/dev/tty.*')
+	else:
+		raise EnvironmentError('Unsupported platform')
+
+	result = []
+	for port in ports:
+		try:
+			s = serial.Serial(port)
+			s.close()
+			result.append(port)
+		except (OSError, serial.SerialException):
+			pass
+	return result
 
 def flags(flag):
 	if flag in sys.argv:
@@ -17,14 +41,15 @@ def flags(flag):
 
 def showHelp():
 	print open(path+'/docs/README.md','r').read()
-	print ' + Logs can be found in ' + path + "/logs/"		
+	print '  Logs can be found in ' + path + "/logs/"		
 	print
 	print 'Available Ports:'
 	print '----------------'		
 
-	for each in glob.glob('/dev/tty.*'):
-		print "  > " + str(each)
+	for port in serialPorts():
+		print " > " + str(port)
 
+<<<<<<< HEAD
 def cli():
 	if __name__ == "xerial.xerial" or "__main__":
 		if len(sys.argv) == 1:
@@ -34,6 +59,21 @@ def cli():
 		if '-h' in sys.argv:
 			showHelp()
 			exit()
+=======
+if __name__ == "xerial.xerial" or "__main__":
+	if len(sys.argv) == 1:
+		showHelp()
+		exit()
+
+	if '-h' in sys.argv:
+		showHelp()
+		exit()
+
+	if '-ls' in sys.argv:
+		for port in serialPorts():
+			print str(port)
+		exit()
+>>>>>>> origin/master
 
 		if '-ls' in sys.argv:
 			ports = glob.glob('/dev/tty.*')
@@ -212,7 +252,33 @@ def cli():
 			xerial.terminal()
 			exit()
 		else:
+<<<<<<< HEAD
 			print "  -p <port> must be included"
+=======
+			log = False
+		
+		
+
+	else:
+		print '  No port specified.  Usage: "xerial -c <serialport>". Run "xerial" for more options.'
+		exit()
+
+	if '-license' == sys.argv[1]:
+		print
+		print open(path+"/docs/LICENSE.md").read()
+		print
+		exit()
+
+	if sys.argv[1] == '-l':
+		try:
+			if not os.path.isdir(path+"/presets"):
+				os.makedirs(path+"/presets")
+			presetFile = open(path+"/presets/" + sys.argv[2]+".xer", 'r')
+			pf = json.load(presetFile)			
+
+		except:
+			print "Could not load " + sys.argv[2]+".xer"
+>>>>>>> origin/master
 			exit()
 
 

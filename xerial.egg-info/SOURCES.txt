@@ -8,10 +8,12 @@ xerial/cli.py
 xerial.egg-info/PKG-INFO
 xerial.egg-info/SOURCES.txt
 xerial.egg-info/dependency_links.txt
+xerial.egg-info/entry_points.txt
 xerial.egg-info/requires.txt
 xerial.egg-info/top_level.txt
 xerial/docs/LICENSE.md
 xerial/docs/README.md
-xerial/xerial/.DS_Store
 xerial/xerial/__init__.py
+xerial/xerial/__init__.pyc
 xerial/xerial/xerial.py
+xerial/xerial/xerial.pyc

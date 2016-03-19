@@ -1,8 +1,8 @@
 
-# xerial - Terminal Based Serial Client [![Travis-CI](https://travis-ci.org/nickpetty/xerial.svg?branch=master)](https://travis-ci.org/nickpetty/xerial)
+# xerial - Terminal Based Serial Console [![Travis-CI](https://travis-ci.org/nickpetty/xerial.svg?branch=master)](https://travis-ci.org/nickpetty/xerial)
 ------------------------------------------------------------------------
 
-    xerial Copyright (C) 2016  Nicholas Petty
+    xerial Copyright (C) 2016  Nicholas Petty, GPL V3
     This program comes with ABSOLUTELY NO WARRANTY.
     This is free software, and you are welcome to redistribute it
     under certain conditions; type `xerial -license' for details.
@@ -13,8 +13,11 @@
 
 ## Usage:
 ------------------------------------------------------------------------
-    >xerial
+    # Minimal Usage:
+    > xerial -p COM1  # default parameters are 9600 8/N/1
 
+    
+    # Arguments:
     -p <port>              # Connect to serial port.
     -a <b/p/s>             # -a bytesize/parity/stopbits (default 8/N/1).
                            # Parity options 'N','E','O','M','S'.
@@ -42,4 +45,4 @@
 -------------------------------------------------------------------------
 + OSX
 + Linux
-+ (Windows coming soon)
++ Windows

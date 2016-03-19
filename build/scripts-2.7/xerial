@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 #!/usr/bin/python
+=======
+#!C:\Python27\python.exe
+>>>>>>> origin/master
 from xerial import *
