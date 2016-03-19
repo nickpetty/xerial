@@ -1,5 +1,5 @@
 
-xerial - Terminal Based Serial Client
+xerial - Terminal Based Serial Console
 -------------------------------------
  + URL: http://github.com/nickpetty/xserial
 

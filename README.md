@@ -1,5 +1,5 @@
 
-# xerial - Terminal Based Serial Client [![Travis-CI](https://travis-ci.org/nickpetty/xerial.svg?branch=master)](https://travis-ci.org/nickpetty/xerial)
+# xerial - Terminal Based Serial Console [![Travis-CI](https://travis-ci.org/nickpetty/xerial.svg?branch=master)](https://travis-ci.org/nickpetty/xerial)
 ------------------------------------------------------------------------
 
     xerial Copyright (C) 2016  Nicholas Petty, GPL V3

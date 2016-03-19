@@ -1,7 +1,8 @@
-xerial - Terminal Based Serial Client |Travis-CI|
+xerial - Terminal Based Serial Console
+======================================
 
-Github https://github.com/nickpetty/xerial
-Travis-CI https://travis-ci.org/nickpetty/xerial.svg?branch=master
+- Github: github.com/nickpetty/xerial
+- Travis-CI: travis-ci.org/nickpetty/xerial.svg?branch=master
 
 ::
 
@@ -11,14 +12,14 @@ Travis-CI https://travis-ci.org/nickpetty/xerial.svg?branch=master
     under certain conditions; type `xerial -license' for details.
 
 Install:
-===========
+========
 
 ::
 
     pip install xerial
 
 Usage:
-=========
+======
 
 ::
 
@@ -57,7 +58,3 @@ Platforms:
 -  OSX
 -  Linux
 -  Windows
-
-.. |Github| target:: https://github.com/nickpetty/xerial
-.. |Travis-CI| image:: https://travis-ci.org/nickpetty/xerial.svg?branch=master
-   
