@@ -1,6 +1,6 @@
 Metadata-Version: 1.0
 Name: xerial
-Version: 1.0.9b1
+Version: 1.1.0b1
 Summary: Terminal Based Serial Client
 Home-page: http://github.com/nickpetty/xerial
 Author: Nicholas Petty
@@ -50,6 +50,6 @@ Description:
         -------------------------------------------------------------------------
         + OSX
         + Linux
-        + (Windows coming soon)
+        + Windows
 Keywords: xerial serial
 Platform: UNKNOWN

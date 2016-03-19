@@ -13,8 +13,11 @@
 
 ## Usage:
 ------------------------------------------------------------------------
-    >xerial
+    # Minimal Usage:
+    > xerial -p COM1  # default parameters are 9600 8/N/1
 
+    
+    # Arguments:
     -p <port>              # Connect to serial port.
     -a <b/p/s>             # -a bytesize/parity/stopbits (default 8/N/1).
                            # Parity options 'N','E','O','M','S'.
@@ -42,4 +45,4 @@
 -------------------------------------------------------------------------
 + OSX
 + Linux
-+ (Windows coming soon)
++ Windows
