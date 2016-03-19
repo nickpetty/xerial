@@ -36,13 +36,15 @@
     -log                   # Log all terminal activity to file in current working directory.
     -license               # Display License
 
+
 ## Notes:
 ------------------------------------------------------------------------
  + Type `>q` at anytime to exit serial terminal.
  + Please submit all pull requests to the `development` branch.
+
  
- Platforms:
+## Platforms:
 -------------------------------------------------------------------------
-+ OSX
-+ Linux
-+ Windows
+ + OSX
+ + Linux
+ + Windows
