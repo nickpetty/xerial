@@ -7,7 +7,7 @@ setup(
     author_email='nick@ihackeverything.com',
     packages=['xerial'],
     entry_points = {
-        "console_scripts": ['xerial = xerial.xerial:cli']
+        "console_scripts": ['xerial = xerial.cli:cli']
         },
     package_data={'':['docs/*.md','LICENSE']},
     include_package_data=True,
