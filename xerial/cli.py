@@ -59,14 +59,9 @@ if __name__ == "xerial.xerial" or "__main__":
 		exit()
 
 	if '-ls' in sys.argv:
-		ports = glob.glob('/dev/tty.*')
-		if len(ports) > 0:
-			for port in ports:
-				print port
-			exit()
-		else:
-			print 'No ports found...'
-			exit()
+		for port in serialPorts():
+			print str(port)
+		exit()
 
 	if '-lp' in sys.argv:
 		if len(sys.argv) > 2:
