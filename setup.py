@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='xerial',
-    version='1.0.3b1',
+    version='1.0.9b1',
     author='Nicholas Petty',
     author_email='nick@ihackeverything.com',
     packages=['xerial'],
@@ -13,7 +13,8 @@ setup(
     description='Terminal Based Serial Client',
     long_description=open('README.rst').read(),
     install_requires=['pyserial'],
-    scripts=['bin/xerial']
+    scripts=['bin/xerial'],
+    keywords="xerial serial"
 )
 
 

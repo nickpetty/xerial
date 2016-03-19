@@ -17,7 +17,7 @@ def flags(flag):
 
 def showHelp():
 	print open(path+'/docs/README.md','r').read()
-	print '  Logs can be found in ' + path + "/logs/"		
+	print ' + Logs can be found in ' + path + "/logs/"		
 	print
 	print 'Available Ports:'
 	print '----------------'		
@@ -171,7 +171,7 @@ if __name__ == "xerial.xerial" or "__main__":
 		
 
 	else:
-		print '  No port specified.  Usage: "xerial -c <serialport>". Run "xerial" for more options.'
+		print '  No port specified.  Usage: "xerial -p <serialport>". Run "xerial" for more options.'
 		exit()
 
 	if '-license' == sys.argv[1]:
