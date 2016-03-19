@@ -49,7 +49,7 @@ def showHelp():
 	for port in serialPorts():
 		print " > " + str(port)
 
-<<<<<<< HEAD
+
 def cli():
 	if __name__ == "xerial.xerial" or "__main__":
 		if len(sys.argv) == 1:
@@ -59,21 +59,6 @@ def cli():
 		if '-h' in sys.argv:
 			showHelp()
 			exit()
-=======
-if __name__ == "xerial.xerial" or "__main__":
-	if len(sys.argv) == 1:
-		showHelp()
-		exit()
-
-	if '-h' in sys.argv:
-		showHelp()
-		exit()
-
-	if '-ls' in sys.argv:
-		for port in serialPorts():
-			print str(port)
-		exit()
->>>>>>> origin/master
 
 		if '-ls' in sys.argv:
 			ports = glob.glob('/dev/tty.*')
@@ -214,8 +199,6 @@ if __name__ == "xerial.xerial" or "__main__":
 			else:
 				log = False
 			
-			
-
 		else:
 			print '  No port specified.  Usage: "xerial -p <serialport>". Run "xerial" for more options.'
 			exit()
@@ -252,11 +235,7 @@ if __name__ == "xerial.xerial" or "__main__":
 			xerial.terminal()
 			exit()
 		else:
-<<<<<<< HEAD
 			print "  -p <port> must be included"
-=======
-			log = False
-		
 		
 
 	else:
@@ -278,7 +257,6 @@ if __name__ == "xerial.xerial" or "__main__":
 
 		except:
 			print "Could not load " + sys.argv[2]+".xer"
->>>>>>> origin/master
 			exit()
 
 
