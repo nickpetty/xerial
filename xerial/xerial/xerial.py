@@ -21,7 +21,7 @@ class Xerial():
 		else:
 			self.log = False
 		if self.log == True:
-			logName = str(self.ser.port.split('/')[len(self.ser.port.split('/'))-1])+'='+str(time.strftime("%m:%d:%Y")) +'-'+ str(time.strftime("%I:%M:%S"))
+			logName = str(self.ser.port.split('/')[len(self.ser.port.split('/'))-1])+'--'+str(time.strftime("%m-%d-%Y")) +'--'+ str(time.strftime("%I-%M-%S"))
 			self.logFile = open(logName+".txt", 'w')
 
 
