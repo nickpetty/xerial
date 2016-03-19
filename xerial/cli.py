@@ -6,31 +6,7 @@ import glob
 import json
 import os
 from xerial import Xerial
-import platform
-import serial
-
 path = os.path.dirname(os.path.realpath(__file__))
-
-def serialPorts():
-	if sys.platform.startswith('win'):
-		ports = ['COM%s' % (i + 1) for i in range(256)]
-	elif sys.platform.startswith('linux') or sys.platform.startswith('cygwin'):
-	# this excludes your current terminal "/dev/tty"
-		ports = glob.glob('/dev/tty[A-Za-z]*')
-	elif sys.platform.startswith('darwin'):
-		ports = glob.glob('/dev/tty.*')
-	else:
-		raise EnvironmentError('Unsupported platform')
-
-	result = []
-	for port in ports:
-		try:
-			s = serial.Serial(port)
-			s.close()
-			result.append(port)
-		except (OSError, serial.SerialException):
-			pass
-	return result
 
 def flags(flag):
 	if flag in sys.argv:
@@ -46,8 +22,8 @@ def showHelp():
 	print 'Available Ports:'
 	print '----------------'		
 
-	for port in serialPorts():
-		print " > " + str(port)
+	for each in glob.glob('/dev/tty.*'):
+		print "  > " + str(each)
 
 if __name__ == "xerial.xerial" or "__main__":
 	if len(sys.argv) == 1:
