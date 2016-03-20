@@ -41,7 +41,7 @@ def flags(flag):
 
 def showHelp():
 	print open(path+'/docs/README.md','r').read()
-	print '  Logs can be found in ' + path + "/logs/"		
+	print ' + Logs can be found in ' + path + "/logs/"		
 	print
 	print 'Available Ports:'
 	print '----------------'		
@@ -61,14 +61,12 @@ def cli():
 			exit()
 
 		if '-ls' in sys.argv:
-			ports = glob.glob('/dev/tty.*')
-			if len(ports) > 0:
-				for port in ports:
-					print port
-				exit()
-			else:
-				print 'No ports found...'
-				exit()
+			for port in serialPorts():
+				print " > " + str(port)
+			exit()
+		else:
+			print 'No ports found...'
+			exit()
 
 		if '-lp' in sys.argv:
 			if len(sys.argv) > 2:

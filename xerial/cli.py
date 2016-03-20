@@ -64,9 +64,9 @@ def cli():
 			for port in serialPorts():
 				print " > " + str(port)
 			exit()
-			else:
-				print 'No ports found...'
-				exit()
+		else:
+			print 'No ports found...'
+			exit()
 
 		if '-lp' in sys.argv:
 			if len(sys.argv) > 2:
