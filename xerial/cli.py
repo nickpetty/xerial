@@ -54,13 +54,13 @@ def cli():
 			showHelp()
 			exit()
 
-		if '-ls' in sys.argv:
-			for port in serialPorts():
-				print " > " + str(port)
-			exit()
-		else:
-			print 'No ports found...'
-			exit()
+		# if '-ls' in sys.argv:
+		# 	for port in serialPorts():
+		# 		print " > " + str(port)
+		# 	exit()
+		# else:
+		# 	print 'No ports found...'
+		# 	exit()
 
 		if '-lp' in sys.argv:
 			if len(sys.argv) > 2:
@@ -90,9 +90,9 @@ def cli():
 			print 'No presets found.'
 			exit()
 
-		if flags("-p") != False:
-			#port = sys.argv[sys.argv.index('-c')+1]
-			port = flags("-p")
+		if '-p' in sys.argv:
+			port = sys.argv[sys.argv.index('-p')+1]
+			
 
 			if '-b' in sys.argv:
 				speed = sys.argv[sys.argv.index('-b')+1]
@@ -251,6 +251,9 @@ def cli():
 			print "Could not load " + sys.argv[2]+".xer"
 			exit()
 
+
+if __name__ == "xerial.xerial" or "__main__":
+	cli()
 
 
 

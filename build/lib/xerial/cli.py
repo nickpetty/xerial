@@ -32,12 +32,6 @@ def serialPorts():
 			pass
 	return result
 
-def flags(flag):
-	if flag in sys.argv:
-		try:
-			return sys.argv[sys.argv.index(flag)+1]
-		except:
-			return False
 
 def showHelp():
 	print open(path+'/docs/README.md','r').read()
